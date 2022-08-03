@@ -1,0 +1,28 @@
+services:
+  # see https://docs.locust.io/en/1.5.2/running-locust-docker.html
+  master:
+    image: locustio/locust:2.10.1
+    ports:
+     - "8089:8089"
+     - "5557:5557"
+    command: -f /mnt/locust/dummy.py --master -H http://master:8089
+    volumes:
+      - ./dummy.py:/mnt/locust/dummy.py
+
+  boomer:
+    depends_on:
+    - master
+    # see options. https://docs.locust.io/en/stable/configuration.html
+    command: "/go/src/app/binary --master-host master"
+    build:
+      context: .
+      dockerfile: ./cmd/boomer/Dockerfile
+    environment:
+      - SERVER_ENDPOINT=server:50051
+
+  server:
+    build:
+      context: .
+      dockerfile: ./cmd/server/Dockerfile
+    ports:
+     - "50051:50051"
