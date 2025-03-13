@@ -11,7 +11,7 @@ jobs:
   build:
     strategy:
       matrix:
-        paths: ["boomer"]
+        paths: ["boomer/cmd/boomer", "boomer/cmd/server"]
     runs-on: ubuntu-latest
     timeout-minutes: 10
     defaults:
