@@ -31,9 +31,9 @@ require (
 	github.com/zeromq/goczmq v4.1.0+incompatible // indirect
 	github.com/zeromq/gomq v0.0.0-20201031135124-cef4e507bb8e // indirect
 	github.com/zeromq/gomq/zmtp v0.0.0-20201031135124-cef4e507bb8e // indirect
-	golang.org/x/net v0.33.0 // indirect
-	golang.org/x/sys v0.28.0 // indirect
-	golang.org/x/text v0.21.0 // indirect
+	golang.org/x/net v0.36.0 // indirect
+	golang.org/x/sys v0.30.0 // indirect
+	golang.org/x/text v0.22.0 // indirect
 	google.golang.org/genproto v0.0.0-20230410155749-daa745c078e1 // indirect
 	google.golang.org/protobuf v1.33.0 // indirect
 )
