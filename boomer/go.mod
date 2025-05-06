@@ -1,6 +1,8 @@
 module github.com/guitarrapc/benchmark-lab
 
-go 1.18
+go 1.23.0
+
+toolchain go1.24.2
 
 require (
 	github.com/myzhan/boomer v1.6.1-0.20220801092559-7477afc92a5f
