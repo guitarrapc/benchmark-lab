@@ -4,7 +4,7 @@ go 1.25.0
 
 require (
 	github.com/myzhan/boomer v1.6.1-0.20220801092559-7477afc92a5f
-	google.golang.org/grpc v1.79.3
+	google.golang.org/grpc v1.82.1
 	google.golang.org/grpc/examples v0.0.0-20220802225637-9bc72deba4d2
 )
 
@@ -35,5 +35,5 @@ require (
 	golang.org/x/sys v0.45.0 // indirect
 	golang.org/x/text v0.37.0 // indirect
 	google.golang.org/genproto v0.0.0-20230410155749-daa745c078e1 // indirect
-	google.golang.org/protobuf v1.36.10 // indirect
+	google.golang.org/protobuf v1.36.11 // indirect
 )
